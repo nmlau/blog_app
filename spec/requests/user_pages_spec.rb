@@ -101,7 +101,6 @@ describe "Authentication" do
               click_button "Sign in"
             end
 
-            it { should have_link('Photos',       href: photos_path) }
             it { should have_link('Profile') }
             it { should have_link('Settings',    href: edit_user_registration_path(user)) }
             it { should have_link('Sign out',    href: destroy_user_session_path) }

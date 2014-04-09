@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
-  def home
+  def blog
+    #@feed_items = current_user.feed.paginate(page: params[:page])
   end
 
   def contact

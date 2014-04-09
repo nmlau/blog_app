@@ -88,6 +88,8 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
+  bottom: 10px;
+  position: absolute;
   a {
     color: $gray;
     &:hover {
@@ -140,11 +142,6 @@ aside {
       margin-top: 0px;
     }
   }
-}
-
-.gravatar {
-  float: left;
-  margin-right: 10px;
 }
 
 .stats {
@@ -234,16 +231,9 @@ input {
 .timestamp {
   color: $grayLight;
 }
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
 aside {
   textarea {
     height: 100px;
     margin-bottom: 5px;
   }
 }
-
-.more_info, .show_more_info .less_info { display: none; }
-.show_more_info .more_info, .less_info { display: inline-block; }
