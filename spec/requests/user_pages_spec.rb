@@ -88,7 +88,7 @@ describe "Authentication" do
             it { should_not have_link('Settings',    href: edit_user_registration_path(user)) }
 
             describe "after visiting another page" do
-              before { click_link "Home" }
+              before { click_link "Blog" }
               it { should_not have_selector('div.alert.alert-error') }
             end
           end
