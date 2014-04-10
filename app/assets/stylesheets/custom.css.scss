@@ -59,7 +59,8 @@ h2 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.7em;
+  /*  line-height: 1.7em; */
+  line-height: 1.3em;
 }
 
 
@@ -109,22 +110,12 @@ footer {
   }
 }
 
-/* miscellaneous */
-
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
-}
-
 /* sidebar */
 
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid $grayDarker;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -141,35 +132,6 @@ aside {
       margin-bottom: 3px;
       margin-top: 0px;
     }
-  }
-}
-
-.stats {
-  overflow: auto;
-  a {
-    float: left;
-    padding: 0 10px;
-    border-left: 1px solid $grayLighter;
-    color: gray;
-    &:first-child {
-      padding-left: 0;
-      border: 0;
-    }
-    &:hover {
-      text-decoration: none;
-      color: $blue;
-    }
-  }
-  strong {
-    display: block;
-  }
-}
-
-.user_avatars {
-  overflow: auto;
-  margin-top: 10px;
-  .gravatar {
-    margin: 1px 1px;
   }
 }
 
@@ -199,24 +161,9 @@ input {
   @extend .error;
 }
 
-/* Users index */
+/* posts */
 
-.users {
-  list-style: none;
-  margin: 0;
-  li {
-    overflow: auto;
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:last-child {
-      border-bottom: 1px solid $grayLighter;
-    }
-  }
-}
-
-/* microposts */
-
-.microposts {
+.posts {
   list-style: none;
   margin: 10px 0 0 0;
 
@@ -227,6 +174,8 @@ input {
 }
 .content {
   display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e8e8;
 }
 .timestamp {
   color: $grayLight;
