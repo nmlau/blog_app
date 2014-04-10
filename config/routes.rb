@@ -1,6 +1,7 @@
 UploadApp::Application.routes.draw do
   
   devise_for :users
+  resources :posts
 
   root  'static_pages#blog'
   match 'blog',     to: 'static_pages#blog',      via: 'get'
