@@ -297,3 +297,36 @@
 [04/09/14 19:14:20 -0700 Nicholass-MacBook-Air.local (58174)] INFO : Installing Rails4 Error instrumentation
 [04/09/14 19:14:20 -0700 Nicholass-MacBook-Air.local (58174)] INFO : Finished instrumentation
 [04/09/14 19:14:20 -0700 Nicholass-MacBook-Air.local (58174)] INFO : Doing deferred dependency-detection before Rack startup
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Starting the New Relic agent in "development" environment.
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Reading configuration from config/newrelic.yml
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : New Relic Agent Developer Mode enabled.
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Enabling the Request Sampler.
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Environment: development
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : No known dispatcher detected.
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Application: My Application
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] WARN : Agent configured not to send data in this environment.
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Installing ActiveRecord 4 instrumentation
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Installing Net instrumentation
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Installing deferred Rack instrumentation
+[04/09/14 19:46:55 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Installing Rails 4 Controller instrumentation
+[04/09/14 19:46:56 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Installing Rails 4 view instrumentation
+[04/09/14 19:46:56 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Installing Rails4 Error instrumentation
+[04/09/14 19:46:56 -0700 Nicholass-MacBook-Air.local (58314)] INFO : Finished instrumentation
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Starting the New Relic agent in "development" environment.
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Reading configuration from config/newrelic.yml
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : New Relic Agent Developer Mode enabled.
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Enabling the Request Sampler.
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Environment: development
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Dispatcher: webrick
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Application: My Application
+[04/09/14 19:51:23 -0700 Nicholass-MacBook-Air.local (58339)] WARN : Agent configured not to send data in this environment.
+[04/09/14 19:51:24 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Installing ActiveRecord 4 instrumentation
+[04/09/14 19:51:24 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Installing Net instrumentation
+[04/09/14 19:51:24 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Installing deferred Rack instrumentation
+[04/09/14 19:51:24 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Installing Rails 4 Controller instrumentation
+[04/09/14 19:51:24 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Installing Rails 4 view instrumentation
+[04/09/14 19:51:24 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Installing Rails4 Error instrumentation
+[04/09/14 19:51:24 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Finished instrumentation
+[04/09/14 19:51:25 -0700 Nicholass-MacBook-Air.local (58339)] INFO : Doing deferred dependency-detection before Rack startup

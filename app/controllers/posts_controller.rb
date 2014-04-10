@@ -1,6 +1,14 @@
+#http://www.reinteractive.net/posts/32-ruby-on-rails-3-2-blog-in-15-minutes-step-by-step
+#followed this guide for basic scaffolding
+
+#https://github.com/plataformatec/devise/wiki/How-To:-Add-an-Admin-role
+#for adding admin boolean to user model
+
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate, :except => [ :index, :show ]
+  #before_action :authenticate_user!, :except => [ :index, :show ]
+  before_action :admin_user, :except => [ :index, :show ]
+
 
   def index
     @posts = Post.all
@@ -52,13 +60,8 @@ class PostsController < ApplicationController
       params.require(:post).permit(:title, :content)
     end
 
-  def authenticate
-    authenticate_or_request_with_http_basic do |email, password|
-      #email == @user.email && password == @user.password
-      user = User.find_for_authentication(:email => email)
-      user.valid_password?(password) ? user : nil
+    def admin_user
+      redirect_to(root_url) unless current_user.admin?
     end
-  end 
-
         
 end
