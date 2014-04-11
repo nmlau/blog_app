@@ -3,7 +3,7 @@
     <b> <%= link_to feed_item.title, feed_item %> </b>
   </span>
   <span class="timestamp">
-    Posted <%= feed_item.created_at %> 
+    Posted <%= feed_item.created_at.strftime("%B %d, %Y") %> 
   </span>
   <% if current_user.try(:admin?) %>
     <%= link_to "delete", feed_item, method: :delete,

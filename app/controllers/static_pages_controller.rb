@@ -4,9 +4,14 @@ class StaticPagesController < ApplicationController
     @recent_feed_items = Post.find(:all, :limit => 5)
   end
 
-  def contact
+  def archive
+    @posts = Post.all
   end
 
   def about
   end
+
+  def beerware
+  end
+
 end

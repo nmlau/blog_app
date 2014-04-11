@@ -3,10 +3,11 @@
     <div class="container">
       <nav>
         <ul class="nav pull-right">
-          <%= link_to "nicks blog", root_path, id: "logo" %>
+          <%= link_to "Nicks Dev Spot", root_path, id: "logo" %>
         </ul>
         <ul class="nav pull-left">
-          <li><%= link_to "Blog",    root_path %></li>
+          <li><%= link_to "Blog",     root_path %></li>
+          <li><%= link_to "Archive",  archive_path %></li>
           <li><%= link_to "About",    about_path %></li>
           <% if user_signed_in? %>
             <li id="fat-menu" class="dropdown">
@@ -14,9 +15,9 @@
                 Account <b class="caret"></b>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Profile", '#' %></li>
-                <li><%= link_to "New Post",    new_post_path %></li>
-                <li><%= link_to "Settings", edit_user_registration_path(current_user) %></li>
+                <li><%= link_to "Profile",      '#' %></li>
+                <li><%= link_to "New Post",     new_post_path %></li>
+                <li><%= link_to "Settings",     edit_user_registration_path(current_user) %></li>
                 <li class="divider"></li>
                 <li>
                   <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>

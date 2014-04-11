@@ -4,8 +4,10 @@ UploadApp::Application.routes.draw do
   resources :posts
 
   root  'static_pages#blog'
-  match 'blog',     to: 'static_pages#blog',      via: 'get'
-  match 'about',    to: 'static_pages#about',     via: 'get'
+  match 'blog',     to: 'static_pages#blog',        via: 'get'
+  match 'about',    to: 'static_pages#about',       via: 'get'
+  match 'archive',  to: 'static_pages#archive',     via: 'get'
+  match 'beerware',  to: 'static_pages#beerware',   via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

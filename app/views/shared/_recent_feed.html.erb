@@ -1,5 +1,11 @@
 <% if @recent_feed_items.any? %>
   <ol class="recent posts">
-    <%= render partial: 'shared/recent_feed_item', collection: @recent_feed_items %>
+    <% @recent_feed_items.each do |feed_item| %>
+      <ol id="<%= feed_item.id %>">
+        <span class="title">
+          <b> <%= link_to feed_item.title, feed_item %> </b>
+        </span>
+      </ol>
+    <%end %>
   </ol>
 <% end %>

@@ -59,8 +59,8 @@ h2 {
 
 p {
   font-size: 1.1em;
-  /*  line-height: 1.7em; */
   line-height: 1.3em;
+  /*  line-height: 1.7em; */
 }
 
 
@@ -90,7 +90,7 @@ footer {
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   bottom: 10px;
-  position: absolute;
+  position: relative;
   a {
     color: $gray;
     &:hover {
