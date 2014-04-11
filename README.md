@@ -1,54 +1,10 @@
-# Ruby on Rails Upload App
+This blog webapp utilizes the technologies:  
+-Ruby on Rails obviously
+-Devise for user, session, and password management
+-Bootstrap to make things look pretty since I'm no css wizard.
+-Rspec and Capybara for quick automated testing
+-Heroku for hosting online as well as the New Relic addon to stop the dyno from idling
 
-of the 10 devise modules, need:
-database authenticatable
-omniauthable???
-recoverable
-registerable
-rememberable
-validatable
-
-don't think I need:
-confirmable
-trackable
-timeoutable
-lockable
-
-ails generate devise:install
-      create  config/initializers/devise.rb
-      create  config/locales/devise.en.yml
-===============================================================================
-
-Some setup you must do manually if you haven't yet:
-
-  1. Ensure you have defined default url options in your environments files. Here
-     is an example of default_url_options appropriate for a development environment
-     in config/environments/development.rb:
-
-       config.action_mailer.default_url_options = { host: 'localhost:3000' }
-
-     In production, :host should be set to the actual host of your application.
-
-  2. Ensure you have defined root_url to *something* in your config/routes.rb.
-     For example:
-
-       root to: "home#index"
-
-  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
-     For example:
-
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-
-  4. If you are deploying on Heroku with Rails 3.2 only, you may want to set:
-
-       config.assets.initialize_on_precompile = false
-
-     On config/application.rb forcing your application to not access the DB
-     or load models when precompiling your assets.
-
-  5. You can copy Devise views (for customization) to your app by running:
-
-       rails g devise:views
-
-===============================================================================
+Obligatory shoutouts to:
+  Ruby on Rails Tutorial by Michael Hartl which is a fantastic resource and where I've learned practically everything I know about Rails (and some extra). I definitely owe him a beer(beer-ware license.)
+  Railscasts by Ryan Bates for brutally thorough screencasts on anything and everything you would want to know about Rails.
