@@ -11,7 +11,7 @@ class PostsController < ApplicationController
 
 
   def index
-    @posts = Post.unscoped.all
+    @posts = Post.all
   end
 
   # set_post
