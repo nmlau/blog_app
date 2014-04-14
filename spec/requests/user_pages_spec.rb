@@ -1,3 +1,6 @@
+
+##based on devise so not big deal
+
 # #[x] As a new visitor to the site, I can sign up so that I have an account.
 # #[x] As a logged-in user, I can click logout to end my session.
 # #[x] As a return user, I can log in to the site to access my account.
