@@ -5,7 +5,7 @@
 </p>
 
 <p>
-  <%= @post.content %>
+  <%= simple_format(@post.content) %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

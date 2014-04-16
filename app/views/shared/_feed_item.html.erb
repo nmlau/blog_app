@@ -10,5 +10,5 @@
                                       data: { confirm: "You sure?" },
                                       title: feed_item.content %>      
   <% end %>
-  <span class="content"> <%= feed_item.content %></span>
+  <span class="content"> <%= simple_format(feed_item.content) %></span>
 </ol>
