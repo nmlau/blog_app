@@ -21,7 +21,7 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
 end
 
-gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
